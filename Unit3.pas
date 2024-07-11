@@ -16,10 +16,13 @@ type
     lblNAME: TLabel;
     edt2: TEdit;
     btn4: TButton;
+    btn5: TButton;
+    btn6: TButton;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -78,6 +81,16 @@ procedure TForm3.dbgrd1CellClick(Column: TColumn);
 begin
   edt1.Text:= DataModule4.Zkategori.Fields[1].AsString;
   a:= DataModule4.Zkategori.Fields[0].AsString;
+end;
+
+procedure TForm3.FormCreate(Sender: TObject);
+begin
+  btn6.Enabled:= True;
+  btn1.Enabled:= False;
+  btn2.Enabled:= False;
+  btn5.Enabled:= False;
+  btn3.Enabled:= False;
+  btn
 end;
 
 end.

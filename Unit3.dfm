@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 601
-  Top = 174
+  Left = 823
+  Top = 198
   Width = 534
   Height = 366
   Caption = 'KATEGORI'
@@ -11,6 +11,7 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object lblNAME: TLabel
@@ -28,34 +29,34 @@ object Form3: TForm3
     TabOrder = 0
   end
   object btn1: TButton
-    Left = 96
+    Left = 168
     Top = 72
     Width = 75
     Height = 25
-    Caption = 'INSERT'
+    Caption = 'SIMPAN'
     TabOrder = 1
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 184
+    Left = 256
     Top = 72
     Width = 75
     Height = 25
-    Caption = 'UPDATE'
+    Caption = 'UBAH'
     TabOrder = 2
     OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 272
+    Left = 344
     Top = 72
     Width = 75
     Height = 25
-    Caption = 'DELETE'
+    Caption = 'HAPUS'
     TabOrder = 3
     OnClick = btn3Click
   end
   object dbgrd1: TDBGrid
-    Left = 48
+    Left = 88
     Top = 112
     Width = 320
     Height = 120
@@ -69,18 +70,34 @@ object Form3: TForm3
     OnCellClick = dbgrd1CellClick
   end
   object edt2: TEdit
-    Left = 64
+    Left = 120
     Top = 248
-    Width = 121
+    Width = 129
     Height = 21
     TabOrder = 5
   end
   object btn4: TButton
-    Left = 208
+    Left = 264
     Top = 248
     Width = 75
     Height = 25
     Caption = 'CARI'
     TabOrder = 6
+  end
+  object btn5: TButton
+    Left = 432
+    Top = 72
+    Width = 75
+    Height = 25
+    Caption = 'BATAL'
+    TabOrder = 7
+  end
+  object btn6: TButton
+    Left = 80
+    Top = 72
+    Width = 75
+    Height = 25
+    Caption = 'BARU'
+    TabOrder = 8
   end
 end

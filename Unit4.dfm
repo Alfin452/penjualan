@@ -16,8 +16,8 @@ object DataModule4: TDataModule4
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\DELPHI VISUAL\libmysql.dll'
-    Left = 64
-    Top = 48
+    Left = 24
+    Top = 64
   end
   object Zkategori: TZQuery
     Connection = ZConnection1
@@ -25,12 +25,12 @@ object DataModule4: TDataModule4
     SQL.Strings = (
       'Select * from kategori')
     Params = <>
-    Left = 168
+    Left = 96
     Top = 40
   end
   object dskategori: TDataSource
     DataSet = Zkategori
-    Left = 152
+    Left = 96
     Top = 104
   end
 end
